@@ -1,0 +1,104 @@
+site_name: "Isatis Formation"
+site_description: Guide utilisateur de l'application web
+site_author: Nassim Belalia
+
+theme:
+  name: material
+  language: fr
+
+  features:
+    # ⚡ Navigation fluide
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top           # Bouton retour haut de page
+
+    # 🧭 Améliorations UX
+    - header.autohide          # Cache la barre du haut au scroll
+    - content.code.copy        # Bouton "copier" sur les blocs de code
+    - search.highlight         # Surligne les résultats
+    - search.suggest           # Suggestions de recherche
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Passer en mode clair
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Utiliser les préférences système
+
+  font:
+    text: "Inter"
+    code: "Fira Code"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/
+  copyright: "© 2025 Isatis Formation – Documentation interne"
+  generator: false
+
+nav:
+  - Accueil: index.md
+
+  - Introduction:
+      - Présentation générale: intro/presentation.md
+      - Accès à l’application: intro/access.md
+      - Sécurité et responsivité: intro/security.md
+
+  - Utilisateurs:
+      - Connexion et mot de passe: users/auth.md
+      - Mon compte: users/account.md
+      - Gestion des comptes (admin): users/admin_accounts.md
+
+  - Navigation générale:
+      - Tableau de bord: navigation/dashboard.md
+      - Affichage et recherche: navigation/lists.md
+      - Paramètres et notifications: navigation/settings.md
+
+  - Formations et sessions:
+      - Liste des formations: sessions/list.md
+      - Création de session (admin): sessions/create.md
+      - Participation à une session: sessions/registration.md
+      - Suivi des inscriptions: sessions/followup.md
+
+  - Documents:
+      - Types de documents: documents/types.md
+      - Accès et édition: documents/access.md
+
+  - Évaluations:
+      - Types de questionnaires: evaluations/types.md
+      - Accès aux résultats (admin): evaluations/results.md
+      - Suivi de satisfaction: evaluations/feedback.md
+
+  - Administration:
+      - Gestion des utilisateurs: admin/users.md
+      - Gestion des sessions: admin/sessions.md
+      - Gestion des documents: admin/documents.md
+      - Statistiques et rapports: admin/stats.md
+      - Paramétrage général: admin/settings.md
+
+  - Annexes:
+      - Schéma fonctionnel: annexes/arborescence.md
+      - Lexique: annexes/lexique.md
+      - FAQ: annexes/faq.md
+      - Contact: annexes/contact.md
