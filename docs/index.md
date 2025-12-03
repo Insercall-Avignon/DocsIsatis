@@ -58,4 +58,4 @@ La documentation est organisée par modules :
 
 - Projet développé avec **Symfony (backend)** et avec le moteur de template **Twig (frontend)**
 - Documentation générée avec **MkDocs**
-- Dernière mise à jour : **3 novembre 2025**
+- Dernière mise à jour : **3 décembre 2025**
